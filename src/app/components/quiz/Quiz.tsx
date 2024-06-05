@@ -1,7 +1,7 @@
 import { useQuizStore } from "@/app/store/quiz";
 import { Card, CardContent, CardHeader, ListItemText } from "@mui/material";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { gradientDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { gradientDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { QuizList, QuizListItemButton } from "./quiz.styles";
 import confetti from "canvas-confetti";
 
