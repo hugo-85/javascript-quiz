@@ -11,7 +11,12 @@ const Pagination = () => {
   const disabledNext = currentQuestion === questions.length;
 
   return (
-    <Stack direction={"row"} justifyContent={"center"} alignItems={"center"}>
+    <Stack
+      role="pagination"
+      direction={"row"}
+      justifyContent={"center"}
+      alignItems={"center"}
+    >
       <IconButton
         aria-label="back"
         onClick={goPreviousQuestion}

@@ -31,10 +31,14 @@ const Quiz = () => {
   };
 
   return (
-    <Card>
+    <Card role="quiz">
       <CardHeader title={question.question} />
       <CardContent>
-        <SyntaxHighlighter language="javascript" style={gradientDark}>
+        <SyntaxHighlighter
+          language="javascript"
+          style={gradientDark}
+          codeTagProps={{ role: "contentinfo", "aria-label": question.code }}
+        >
           {question.code}
         </SyntaxHighlighter>
 
@@ -42,6 +46,8 @@ const Quiz = () => {
           {question.answers.map((answer, index) => (
             <QuizListItemButton
               key={`answer-${index}`}
+              role="listitem"
+              aria-label={answer}
               divider
               onClick={createHandleOnClick(index)}
               backgroundColor={getBackgroundColor(index)}

@@ -7,7 +7,7 @@ export default function Footer() {
     useQuestionsInfo();
 
   return (
-    <Stack gap={1} alignItems={"center"}>
+    <Stack role="footer" gap={1} alignItems={"center"}>
       <Stack direction={"row"} gap={2}>
         <Box>✅ {`right: ${correctQuestions}`}</Box>
         <Box>❌ {`wrong: ${wrongQuestions}`}</Box>
